@@ -1,0 +1,11 @@
+{
+  "buildCommand": "flutter build web",
+  "outputDirectory": "build/web",
+  "installCommand": "git clone https://github.com/flutter/flutter.git --depth 1 -b stable ~/flutter && export PATH=\"$PATH:~/flutter/bin\" && flutter doctor",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
